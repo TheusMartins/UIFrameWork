@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C86727A7261125D000E9CDEB /* ProgressBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86727A6261125D000E9CDEB /* ProgressBarController.swift */; };
+		C86727B32611265800E9CDEB /* UIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D900EB2610D31500F33488 /* UIFramework.framework */; };
 		C8D900F02610D31500F33488 /* UIFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D900EE2610D31500F33488 /* UIFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8D90102261118B500F33488 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D90101261118B500F33488 /* ProgressBar.swift */; };
 		C8D901062611191300F33488 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D901052611191300F33488 /* ViewConfiguration.swift */; };
@@ -17,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C86727A6261125D000E9CDEB /* ProgressBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarController.swift; sourceTree = "<group>"; };
 		C8D900EB2610D31500F33488 /* UIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D900EE2610D31500F33488 /* UIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIFramework.h; sourceTree = "<group>"; };
 		C8D900EF2610D31500F33488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,18 +45,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C86727B32611265800E9CDEB /* UIFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C86727A5261125B000E9CDEB /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				C86727A6261125D000E9CDEB /* ProgressBarController.swift */,
+			);
+			path = ProgressBar;
+			sourceTree = "<group>";
+		};
+		C86727AA2611261600E9CDEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C8D900E12610D31500F33488 = {
 			isa = PBXGroup;
 			children = (
 				C8D900ED2610D31500F33488 /* UIFramework */,
 				C8D9010E26111FF100F33488 /* UIFrameworkDemo */,
 				C8D900EC2610D31500F33488 /* Products */,
+				C86727AA2611261600E9CDEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +118,7 @@
 			children = (
 				C8D9010F26111FF100F33488 /* AppDelegate.swift */,
 				C8D9011326111FF100F33488 /* ComponentList.swift */,
+				C86727A5261125B000E9CDEB /* ProgressBar */,
 				C8D9011826111FF200F33488 /* Assets.xcassets */,
 				C8D9011A26111FF200F33488 /* LaunchScreen.storyboard */,
 				C8D9011D26111FF200F33488 /* Info.plist */,
@@ -225,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8D9011426111FF100F33488 /* ComponentList.swift in Sources */,
+				C86727A7261125D000E9CDEB /* ProgressBarController.swift in Sources */,
 				C8D9011026111FF100F33488 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

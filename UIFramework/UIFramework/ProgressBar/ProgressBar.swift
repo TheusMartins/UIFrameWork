@@ -19,10 +19,10 @@ public final class ProgressBar: UIView {
     }()
     
     // MARK: - Initialization
-    public init(backgroundBarColor: UIColor, barColor: UIColor, exceedBarColor: UIColor) {
+    public init(backgroundBarColor: UIColor, barColor: UIColor) {
         super.init(frame: .zero)
         setupViewConfiguration()
-        setColors(backgroundBarColor: backgroundBarColor, barColor: barColor, exceedBarColor: exceedBarColor)
+        setColors(backgroundBarColor: backgroundBarColor, barColor: barColor)
     }
     
     required init?(coder: NSCoder) {
@@ -30,17 +30,17 @@ public final class ProgressBar: UIView {
     }
     
     // MARK: - Private methods
-    private func setColors(backgroundBarColor: UIColor, barColor: UIColor, exceedBarColor: UIColor) {
+    private func setColors(backgroundBarColor: UIColor, barColor: UIColor) {
         self.backgroundColor = backgroundBarColor
         progressBar.backgroundColor = barColor
     }
     
     // MARK: - Public methods
     public func setProgressBar(goal: Double, done: Double) {
-        let percentValue = goal / 100
-        let progressValue = percentValue == 0 ? 0 : done / percentValue
-        let viewSize = self.bounds.width / 100
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            let percentValue = goal / 100
+            let progressValue = percentValue == 0 ? 0 : done / percentValue
+            let viewSize = self.bounds.width / 100
             self.widhtBar?.constant = CGFloat(progressValue * Double(viewSize))
             UIView.animate(withDuration: 0.5) {
                 self.layoutIfNeeded()

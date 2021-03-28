@@ -32,7 +32,7 @@ final class ComponentList: UIViewController {
 extension ComponentList: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch dataSource[indexPath.row] {
-        case .progressBar: "
+        case .progressBar: navigationController?.pushViewController(ProgressBarController(), animated: true)
         }
     }
 }
