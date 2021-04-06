@@ -9,6 +9,7 @@ import UIKit
 
 enum Components {
     case progressBar
+    case fab
 }
 
 final class ComponentList: UIViewController {
@@ -20,7 +21,7 @@ final class ComponentList: UIViewController {
         return table
     }()
     
-    private let dataSource: [Components] = [.progressBar]
+    private let dataSource: [Components] = [.progressBar, .fab]
     
     // MARK: - Life cycle
     override func loadView() {
@@ -33,6 +34,7 @@ extension ComponentList: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch dataSource[indexPath.row] {
         case .progressBar: navigationController?.pushViewController(ProgressBarController(), animated: true)
+        case .fab: navigationController?.pushViewController(FabController(), animated: true)
         }
     }
 }
@@ -46,7 +48,8 @@ extension ComponentList: UITableViewDataSource {
         let cell =  UITableViewCell.init(style: .default, reuseIdentifier: "DefaultCell")
         cell.selectionStyle = .none
         switch dataSource[indexPath.row] {
-        case .progressBar : cell.textLabel?.text = "ProgressBar"
+        case .progressBar: cell.textLabel?.text = "ProgressBar"
+        case .fab: cell.textLabel?.text = "Fab"
         }
         return cell
     }

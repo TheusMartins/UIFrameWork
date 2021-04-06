@@ -16,6 +16,13 @@
 		C8D9011426111FF100F33488 /* ComponentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D9011326111FF100F33488 /* ComponentList.swift */; };
 		C8D9011926111FF200F33488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8D9011826111FF200F33488 /* Assets.xcassets */; };
 		C8D9011C26111FF200F33488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8D9011A26111FF200F33488 /* LaunchScreen.storyboard */; };
+		C8F2D532261BE0080024F1F2 /* FabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2D531261BE0080024F1F2 /* FabCell.swift */; };
+		C8F2D538261BE0410024F1F2 /* FabCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2D537261BE0410024F1F2 /* FabCellModel.swift */; };
+		C8F2D53C261BE0DD0024F1F2 /* FabMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2D53B261BE0DD0024F1F2 /* FabMenuView.swift */; };
+		C8F2D540261BE2920024F1F2 /* FabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2D53F261BE2920024F1F2 /* FabView.swift */; };
+		C8F2D545261BE4050024F1F2 /* FabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2D544261BE4050024F1F2 /* FabController.swift */; };
+		C8F2D559261BEABD0024F1F2 /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8F2D558261BEABD0024F1F2 /* Asset.xcassets */; };
+		C8F2D55D261BEEEA0024F1F2 /* SelfSizedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2D55C261BEEEA0024F1F2 /* SelfSizedTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +38,13 @@
 		C8D9011826111FF200F33488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8D9011B26111FF200F33488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8D9011D26111FF200F33488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8F2D531261BE0080024F1F2 /* FabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabCell.swift; sourceTree = "<group>"; };
+		C8F2D537261BE0410024F1F2 /* FabCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabCellModel.swift; sourceTree = "<group>"; };
+		C8F2D53B261BE0DD0024F1F2 /* FabMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabMenuView.swift; sourceTree = "<group>"; };
+		C8F2D53F261BE2920024F1F2 /* FabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabView.swift; sourceTree = "<group>"; };
+		C8F2D544261BE4050024F1F2 /* FabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabController.swift; sourceTree = "<group>"; };
+		C8F2D558261BEABD0024F1F2 /* Asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Asset.xcassets; sourceTree = "<group>"; };
+		C8F2D55C261BEEEA0024F1F2 /* SelfSizedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizedTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +81,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C86727BA26112F4900E9CDEB /* Fab */ = {
+			isa = PBXGroup;
+			children = (
+				C8F2D52F261BDFE70024F1F2 /* MenuView */,
+				C8F2D53F261BE2920024F1F2 /* FabView.swift */,
+			);
+			path = Fab;
+			sourceTree = "<group>";
+		};
 		C8D900E12610D31500F33488 = {
 			isa = PBXGroup;
 			children = (
@@ -89,10 +112,12 @@
 		C8D900ED2610D31500F33488 /* UIFramework */ = {
 			isa = PBXGroup;
 			children = (
+				C86727BA26112F4900E9CDEB /* Fab */,
 				C8D901042611190000F33488 /* Helpers */,
 				C8D901002611186F00F33488 /* ProgressBar */,
 				C8D900EE2610D31500F33488 /* UIFramework.h */,
 				C8D900EF2610D31500F33488 /* Info.plist */,
+				C8F2D558261BEABD0024F1F2 /* Asset.xcassets */,
 			);
 			path = UIFramework;
 			sourceTree = "<group>";
@@ -109,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				C8D901052611191300F33488 /* ViewConfiguration.swift */,
+				C8F2D55C261BEEEA0024F1F2 /* SelfSizedTableView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -119,11 +145,30 @@
 				C8D9010F26111FF100F33488 /* AppDelegate.swift */,
 				C8D9011326111FF100F33488 /* ComponentList.swift */,
 				C86727A5261125B000E9CDEB /* ProgressBar */,
+				C8F2D543261BE3F40024F1F2 /* Fab */,
 				C8D9011826111FF200F33488 /* Assets.xcassets */,
 				C8D9011A26111FF200F33488 /* LaunchScreen.storyboard */,
 				C8D9011D26111FF200F33488 /* Info.plist */,
 			);
 			path = UIFrameworkDemo;
+			sourceTree = "<group>";
+		};
+		C8F2D52F261BDFE70024F1F2 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				C8F2D531261BE0080024F1F2 /* FabCell.swift */,
+				C8F2D537261BE0410024F1F2 /* FabCellModel.swift */,
+				C8F2D53B261BE0DD0024F1F2 /* FabMenuView.swift */,
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
+		C8F2D543261BE3F40024F1F2 /* Fab */ = {
+			isa = PBXGroup;
+			children = (
+				C8F2D544261BE4050024F1F2 /* FabController.swift */,
+			);
+			path = Fab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8F2D559261BEABD0024F1F2 /* Asset.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,8 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8F2D532261BE0080024F1F2 /* FabCell.swift in Sources */,
 				C8D90102261118B500F33488 /* ProgressBar.swift in Sources */,
+				C8F2D540261BE2920024F1F2 /* FabView.swift in Sources */,
+				C8F2D53C261BE0DD0024F1F2 /* FabMenuView.swift in Sources */,
+				C8F2D55D261BEEEA0024F1F2 /* SelfSizedTableView.swift in Sources */,
 				C8D901062611191300F33488 /* ViewConfiguration.swift in Sources */,
+				C8F2D538261BE0410024F1F2 /* FabCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +299,7 @@
 				C8D9011426111FF100F33488 /* ComponentList.swift in Sources */,
 				C86727A7261125D000E9CDEB /* ProgressBarController.swift in Sources */,
 				C8D9011026111FF100F33488 /* AppDelegate.swift in Sources */,
+				C8F2D545261BE4050024F1F2 /* FabController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

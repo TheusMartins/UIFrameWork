@@ -8,7 +8,6 @@
 import UIKit
 import UIFramework
 
-
 final class ProgressBarController: UIViewController {
     // MARK: - Private properties
     private let progressBar1 = ProgressBar(backgroundBarColor: .red, barColor: .blue)
