@@ -12,7 +12,8 @@ final class BottomAlertController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .orange
+        title = "Bottom alert"
+        view.backgroundColor = .white
         addButtons()
     }
     
@@ -34,6 +35,18 @@ final class BottomAlertController: UIViewController {
         variation3.setTitle("Variation 3", for: .normal)
         variation4.setTitle("Variation 4", for: .normal)
         variation5.setTitle("Variation 5", for: .normal)
+        
+        variation1.backgroundColor = .blue
+        variation2.backgroundColor = .blue
+        variation3.backgroundColor = .blue
+        variation4.backgroundColor = .blue
+        variation5.backgroundColor = .blue
+        
+        variation1.layer.cornerRadius = 4
+        variation2.layer.cornerRadius = 4
+        variation3.layer.cornerRadius = 4
+        variation4.layer.cornerRadius = 4
+        variation5.layer.cornerRadius = 4
         
         view.addSubview(variation1)
         view.addSubview(variation2)
