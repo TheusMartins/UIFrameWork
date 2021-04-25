@@ -23,7 +23,7 @@ final class FabController: UIViewController {
             FabCellModel(title: "Change background to purple", image: UIImage(named: "lock")!, action: { [weak self] in
                 self?.view.backgroundColor = .purple
             })
-        ]
+        ], delegate: self
     )
     
     // MARK: - Life cycle
@@ -37,5 +37,12 @@ final class FabController: UIViewController {
             fab.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -24),
             fab.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24)
         ])
+        
+    }
+}
+
+extension FabController: FabViewControllerHandlerDelegate {
+    func onFabTap(isShowingMenu: Bool) {
+        print(isShowingMenu ? "Menu is visible" : "Menu is not visible")
     }
 }

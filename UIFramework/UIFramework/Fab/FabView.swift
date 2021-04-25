@@ -31,7 +31,7 @@ open class FabView: UIView {
     
     private let fabIcon: UIImageView = {
         if #available(iOS 13.0, *) {
-            let image = UIImageView(image: UIImage(named: "test", in: Bundle(for: FabView.self), with: nil)?.withRenderingMode(.alwaysTemplate))
+            let image = UIImageView(image: UIImage(named: "xIcon", in: Bundle(for: FabView.self), with: nil)?.withRenderingMode(.alwaysTemplate))
             image.translatesAutoresizingMaskIntoConstraints = false
             image.isUserInteractionEnabled = false
             image.tintColor = .white

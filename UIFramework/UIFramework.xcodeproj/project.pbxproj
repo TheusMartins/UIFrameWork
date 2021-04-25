@@ -23,6 +23,9 @@
 		C8F2D545261BE4050024F1F2 /* FabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2D544261BE4050024F1F2 /* FabController.swift */; };
 		C8F2D559261BEABD0024F1F2 /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8F2D558261BEABD0024F1F2 /* Asset.xcassets */; };
 		C8F2D55D261BEEEA0024F1F2 /* SelfSizedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2D55C261BEEEA0024F1F2 /* SelfSizedTableView.swift */; };
+		C8FFC5792635005200B802A2 /* BottomAlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFC5782635005200B802A2 /* BottomAlertModel.swift */; };
+		C8FFC57D263500BD00B802A2 /* BottomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFC57C263500BD00B802A2 /* BottomAlert.swift */; };
+		C8FFC5822635038900B802A2 /* BottomAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFC5812635038900B802A2 /* BottomAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,9 @@
 		C8F2D544261BE4050024F1F2 /* FabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabController.swift; sourceTree = "<group>"; };
 		C8F2D558261BEABD0024F1F2 /* Asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Asset.xcassets; sourceTree = "<group>"; };
 		C8F2D55C261BEEEA0024F1F2 /* SelfSizedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizedTableView.swift; sourceTree = "<group>"; };
+		C8FFC5782635005200B802A2 /* BottomAlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomAlertModel.swift; sourceTree = "<group>"; };
+		C8FFC57C263500BD00B802A2 /* BottomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomAlert.swift; sourceTree = "<group>"; };
+		C8FFC5812635038900B802A2 /* BottomAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 		C8D900ED2610D31500F33488 /* UIFramework */ = {
 			isa = PBXGroup;
 			children = (
+				C8FFC5772634FFFA00B802A2 /* BottomAlert */,
 				C86727BA26112F4900E9CDEB /* Fab */,
 				C8D901042611190000F33488 /* Helpers */,
 				C8D901002611186F00F33488 /* ProgressBar */,
@@ -146,6 +153,7 @@
 				C8D9011326111FF100F33488 /* ComponentList.swift */,
 				C86727A5261125B000E9CDEB /* ProgressBar */,
 				C8F2D543261BE3F40024F1F2 /* Fab */,
+				C8FFC5802635033700B802A2 /* BottomAlert */,
 				C8D9011826111FF200F33488 /* Assets.xcassets */,
 				C8D9011A26111FF200F33488 /* LaunchScreen.storyboard */,
 				C8D9011D26111FF200F33488 /* Info.plist */,
@@ -169,6 +177,23 @@
 				C8F2D544261BE4050024F1F2 /* FabController.swift */,
 			);
 			path = Fab;
+			sourceTree = "<group>";
+		};
+		C8FFC5772634FFFA00B802A2 /* BottomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				C8FFC5782635005200B802A2 /* BottomAlertModel.swift */,
+				C8FFC57C263500BD00B802A2 /* BottomAlert.swift */,
+			);
+			path = BottomAlert;
+			sourceTree = "<group>";
+		};
+		C8FFC5802635033700B802A2 /* BottomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				C8FFC5812635038900B802A2 /* BottomAlertController.swift */,
+			);
+			path = BottomAlert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,9 +311,11 @@
 				C8D90102261118B500F33488 /* ProgressBar.swift in Sources */,
 				C8F2D540261BE2920024F1F2 /* FabView.swift in Sources */,
 				C8F2D53C261BE0DD0024F1F2 /* FabMenuView.swift in Sources */,
+				C8FFC57D263500BD00B802A2 /* BottomAlert.swift in Sources */,
 				C8F2D55D261BEEEA0024F1F2 /* SelfSizedTableView.swift in Sources */,
 				C8D901062611191300F33488 /* ViewConfiguration.swift in Sources */,
 				C8F2D538261BE0410024F1F2 /* FabCellModel.swift in Sources */,
+				C8FFC5792635005200B802A2 /* BottomAlertModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +325,7 @@
 			files = (
 				C8D9011426111FF100F33488 /* ComponentList.swift in Sources */,
 				C86727A7261125D000E9CDEB /* ProgressBarController.swift in Sources */,
+				C8FFC5822635038900B802A2 /* BottomAlertController.swift in Sources */,
 				C8D9011026111FF100F33488 /* AppDelegate.swift in Sources */,
 				C8F2D545261BE4050024F1F2 /* FabController.swift in Sources */,
 			);
